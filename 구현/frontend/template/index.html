@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>GoCamping</title>
+    <meta name="author" content="GoCamping">
+    <meta name="description" content="캠핑장">
+    <meta name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css"> <!--css 기본설정 초기화-->
+    
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="../css/main.css" defer> <!--css 연결-->
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Go camping</a>
+            <form class="d-flex">
+                <input class="form-control me-sm-2" type="text" placeholder="검색어를 입력하세요">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                <a href="/host_mypage"><img class="user-image-button" src="../image/user.PNG"></a>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <div class="wrap">
+        <div class="header">
+    <img src="../image/main.jpg">
+      
+            
+    <ul class="menuList" style="background-color: #F6F6F6;">
+        <li><a href="#" style="color:black; text-decoration: None;">전체</a></li>
+        <li><a href="#" style="color:black; text-decoration: None;">수도권</a></li>
+        <li><a href="#" style="color:black; text-decoration: None;">강원도</a></li>
+        <li><a href="#" style="color:black; text-decoration: None;">충청도</a></li>
+        <li><a href="#" style="color:black; text-decoration: None;">경상도</a></li>
+        <li><a href="#" style="color:black; text-decoration: None;">전라도</a></li>
+        <li><a href="#" style="color:black; text-decoration: None;">제주도</a></li>
+    </ul>캠핑장 목록
+
+    <div id="list">
+    </div>
+    <br/>
+    <div>
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link" href="#">&laquo;</a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">5</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">&raquo;</a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <footer class="footer"></footer>
+</html>

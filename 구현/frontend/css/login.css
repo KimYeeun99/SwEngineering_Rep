@@ -1,0 +1,17 @@
+.wrap {
+    width: 300px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    color: black;
+    padding: 0;
+}

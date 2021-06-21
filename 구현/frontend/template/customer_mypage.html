@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>GoCamping</title>
+    <meta name="author" content="GoCamping">
+    <meta name="description" content="캠핑장">
+    <meta name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <!--css 기본설정 초기화-->
+    <!--css 연결-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/customer_mypage.css"/>
+    <script defer src="../js/cus_mypage.js"></script>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Go camping</a>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="text" placeholder="검색어를 입력하세요">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    <a href="/mypage"><img class="user-image-button" src="../image/user.PNG"></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br/>
+    <div class="container" style="height: 300px;">
+        <p class="contents">
+            <span><img class="user-image" src="../image/user.PNG"></span>
+            <br/>
+            <span class="user-name"><b id="nickname"></b></span>
+            <br/>
+            <br/>
+        </p>
+        <div class="updateBtn" style="width:300px; top:20%;">
+        <span><a href="/mypage/reservation"><img class="mypage-image-left" src="../image/reservation.PNG"></a></span>
+        <span><a href="/mypage/review"><img class="mypage-image-right" src="../image/review.PNG"></a></span>
+        </div>
+
+    </div>
+    <br>
+    <div class="updateBtn">
+        <span style="float: left"><b>현재 예약 내역</b></span>
+    </div>
+    <div class="container" style="border:white" id="reservation">
+    </div>
+    <br/><br/>
+    <div class="d-grid gap-2 updateBtn">
+        <button onclick="logout()" class="btn btn-lg btn-primary" type="button">로그아웃</button>
+        <button onclick="withdraw()" class="btn btn-lg btn-primary" type="button">탈퇴하기</button>
+    </div>
+
+
+</body>
+<footer class="footer"></footer>
+
+</html>
